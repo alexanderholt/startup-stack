@@ -5,7 +5,6 @@ description: >
   to conduct a structured assessment of a product feature, methodology,
   marketing claim, or agreement against applicable regulations.
   Produces a saved report.
-disable-model-invocation: true
 context: fork
 allowed-tools: Read, Write, Glob, Grep
 ---

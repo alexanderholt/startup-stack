@@ -4,7 +4,6 @@ description: >
   On-demand expert reviewer for any domain. Invoke with /expert-review
   to dispatch a domain specialist who reviews work you can't evaluate
   yourself. Provide the domain and what to review.
-disable-model-invocation: true
 context: fork
 allowed-tools: Read, Glob, Grep
 ---
