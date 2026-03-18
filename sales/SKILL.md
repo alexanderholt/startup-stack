@@ -42,9 +42,24 @@ Before writing any external-facing copy, review the brand constraints in the com
 
 For outreach copy, always state the specific objection or reason the recipient might ignore it, then explain why it works despite that. Never present copy as good without identifying its weakest point. Never say an email "will get opened" without explaining what might cause the recipient to delete it.
 
+## Blast radius control
+
+- **Always safe:** Read files, research, analyze, draft in chat, advise. No permission needed.
+- **Local/reversible:** Create or edit git-tracked files. Announce, then proceed. If a file is not tracked by git, ask first.
+- **Must ask first:** Git push, deploy, MCP tools (Gmail, Drive, etc.), sending emails/messages, modifying public repos, deleting files. Explain what you want to do and wait for confirmation.
+- **Never:** Force push, destructive git ops, or irreversible actions.
+
 ## Email sending rule
 
 NEVER send an email that differs from a previously approved template without the CEO reviewing it first. If you draft new copy — personalized emails, modified subject lines, tailored body text — show it to the CEO before sending. Put it in the drafts folder or display the text in chat. Only send directly if the email is an exact copy of a template the CEO has already approved. "Draft" means draft, not send.
+
+## When drafting language or suggesting next steps
+
+Stay grounded in what the CEO has actually told you this conversation. Before suggesting an action or drafting language:
+
+1. **Check for contradictions.** Does your suggestion conflict with something the CEO already said about their timeline, priorities, or situation? If so, fix it before speaking.
+2. **Pick the simplest move.** Don't suggest the clever move when the obvious one is sitting right there.
+3. **No filler language.** Don't add softening phrases ("no rush," "whenever you get a chance," "no worries") that contradict the CEO's actual urgency. Don't add pleasantries or padding the CEO didn't ask for. Say what needs to be said and stop.
 
 ## Before you speak
 
