@@ -1,8 +1,8 @@
 # CEO Advisory Skills
 
-**A virtual advisory board for non-technical startup CEOs, built as Claude Code skills.**
+**A virtual advisory board for non-technical startup CEOs. Runs as Claude Code skills.**
 
-Seven expert personas, three quality tools, and a compliance workflow. Each advisor brings deep experience with early-stage startups — you summon them on demand with slash commands.
+Seven expert personas, three quality tools, and a compliance workflow. You summon them with slash commands.
 
 ## The advisors
 
@@ -28,28 +28,33 @@ Seven expert personas, three quality tools, and a compliance workflow. Each advi
 
 ## Who this is for
 
-You run an early-stage startup. You work in Claude Code. You are not a developer — you use Claude Code to manage your business, write outreach, create specs, build financial models, and make decisions. You want consistent, expert-level thinking without having to prompt for it every time.
+You run an early-stage startup and work in Claude Code. You are not a developer, but you use Claude Code to write outreach, create specs, and build financial models. You want rigorous advice without writing a new prompt every time.
 
-This is not a generic prompt pack. Each advisor has:
-
-- **Domain expertise** calibrated to early-stage startups
-- **Structural constraints** that force rigor (the CFO must separate assumptions from conclusions; the GC must cite specific regulations; the angel must state why the advice might be wrong)
-- **Anti-sycophancy checks** — every advisor asks itself whether it's telling you what's true or what you want to hear
-- **Cross-referral** — advisors suggest when another advisor should weigh in
+Each advisor has domain expertise calibrated to early-stage startups, plus structural constraints that force rigor. The CFO must separate assumptions from conclusions. The GC must cite specific regulations. The angel must state why the advice might be wrong. Every advisor asks itself whether it's telling you what's true or what you want to hear, and advisors refer you to the right colleague when a question crosses domains.
 
 ## How the advisors work together
 
 ```
 You:    /angel should I raise a seed round now?
 
-Angel:  Here's my take on timing... [advice with one risk stated]
+Angel:  Timing depends on whether you have repeatable demand or
+        just early interest. If you're pre-revenue with 5 LOIs,
+        that's a fundable signal. If you're pre-revenue with 5
+        warm intros, it's not — and raising now prices you off
+        traction you don't have yet.
         The fundraising math is /cfo territory — worth running
         the numbers before you decide.
 
 You:    /cfo what would a $150k raise at this stage look like?
 
-CFO:    Assumptions (medium confidence): [labeled list]
-        Conclusion: [math shown]
+CFO:    Assumptions (medium confidence):
+        - Monthly burn: $3k (just tooling + hosting)
+        - Revenue: $0, 6-month runway target
+        - Raise: $150k SAFE, no cap
+
+        At current burn that's 50 months of runway, which means
+        you're raising for hiring, not survival. The real question
+        is what you'd spend it on.
         One thing to flag for /gc — your SAFE terms should be
         reviewed before you sign anything.
 ```
@@ -92,7 +97,7 @@ Open `company-context.md` and fill in your company's details. Every advisor read
 - **What their day looks like:** Reviewing audit reports, managing vendor certifications. Experts in healthcare regulation. Not tech people.
 ```
 
-The more specific your context, the better the advice.
+Constraints like "pre-revenue" and "users are domain experts, not tech people" give the advisors more to work with than a paragraph of company description.
 
 ### Step 3: Customize the compliance checklist (optional)
 
@@ -124,8 +129,6 @@ The `.gitignore` excludes your filled-in `company-context.md` and any regulatory
 
 Each advisor is a [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code) — a markdown file with YAML frontmatter that Claude reads when you invoke the command. The skill contains the persona's expertise, communication style, structural constraints, and a link to your company context.
 
-Key technical details:
-
 - `disable-model-invocation: true` — advisors only activate when you summon them
 - `context: fork` (compliance review only) — runs in an isolated subagent
 - `allowed-tools` (compliance review only) — restricted to Read, Write, Glob, Grep
@@ -133,13 +136,13 @@ Key technical details:
 
 ## Design principles
 
-**Structural constraints over self-reflection.** Telling an LLM "don't be sycophantic" has limited effect. Requiring it to cite a specific regulation, show its math, or state why the advice might be wrong forces rigor structurally.
+Telling an LLM "don't be sycophantic" has limited effect. Requiring it to cite a specific regulation, show its math, or state why the advice might be wrong forces rigor. That is the core idea: structural constraints do what self-reflection cannot.
 
-**Constraints over descriptions.** The company context file works best with hard constraints ("pre-revenue, 2-person team, users are domain experts") rather than descriptive prose. Constraints hold up better over long conversations.
+The same applies to your company context file. Hard constraints ("pre-revenue, 2-person team, users are domain experts") hold up over long conversations. Descriptive prose drifts.
 
-**Domain boundaries.** The CFO doesn't opine on strategy; the angel doesn't build spreadsheets. Each advisor stays in their lane and refers you to the right colleague when a question crosses domains.
+Each advisor stays in their lane. The CFO doesn't opine on strategy; the angel doesn't build spreadsheets. When a question crosses domains, the advisor refers you to the right colleague.
 
-**Honest by design.** Every advisor has an anti-sycophancy check tailored to their role. The coach's is the strongest: "Am I being supportive because it's warranted, or because I'm avoiding a hard truth?"
+Every advisor also has an anti-sycophancy check tailored to their role. The coach's is the strongest: "Am I being supportive because it's warranted, or because I'm avoiding a hard truth?"
 
 ## Requirements
 
