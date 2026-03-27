@@ -2,7 +2,7 @@
 
 **A virtual advisory board for non-technical startup CEOs, built as Claude Code skills.**
 
-Seven expert personas, one compliance workflow, and an on-demand expert reviewer. Each advisor brings deep experience with early-stage startups — you summon them on demand with slash commands.
+Seven expert personas, three quality tools, and a compliance workflow. Each advisor brings deep experience with early-stage startups — you summon them on demand with slash commands.
 
 ## The advisors
 
@@ -15,8 +15,16 @@ Seven expert personas, one compliance workflow, and an on-demand expert reviewer
 | `/ux` | UX strategist | User workflows, information design, audience perspective |
 | `/devil` | Dev team advocate | Pressure-test specs and issues before sending to your developer |
 | `/coach` | CEO coach | Time management, priorities, avoidance patterns, hard truths |
-| `/compliance-review` | Compliance review | Formal regulatory assessment — produces a saved report |
-| `/expert-review` | Expert reviewer | On-demand domain expert — reviews work you can't evaluate yourself |
+| `/expert` | On-demand expert | Research, draft, analyze, or build in any domain not covered by a named advisor |
+
+## The tools
+
+| Command | What it does |
+|---|---|
+| `/expert-review` | Dispatches a domain specialist to review work you can't evaluate yourself |
+| `/brand-review` | Reviews any content against your brand guide for terminology, voice, and tone |
+| `/voice-check` | Scans documents for AI writing patterns and deviations from your voice profile |
+| `/compliance-review` | Formal regulatory compliance assessment — produces a saved report |
 
 ## Who this is for
 
