@@ -1,4 +1,4 @@
-# CEO Advisory Skills
+# Startup Stack
 
 **A virtual advisory board for non-technical startup CEOs. Runs as Claude Code skills.**
 
