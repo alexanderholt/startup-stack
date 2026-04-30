@@ -1,9 +1,13 @@
 # Company-specific files (don't commit your filled-in context)
-.claude/skills/references/company-context.md
+references/company-context.md
+
+# Brand docs (your proprietary brand guide)
+brand-review/brand/*.md
+!brand-review/brand-checklist.md
 
 # Compliance review reference documents (your proprietary regulatory docs)
-.claude/skills/compliance-review/references/*.md
-!.claude/skills/compliance-review/references/README.md
+compliance-review/references/*.md
+!compliance-review/references/README.md
 
 # OS files
 .DS_Store

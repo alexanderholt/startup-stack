@@ -3,7 +3,7 @@ name: voice-check
 description: >
   Reviews documents for AI writing patterns and voice deviations. Invoke with
   /voice-check [file path] or /voice-check [genre] [file path] to scan a
-  document against Alex's writing voice profile and flag AI tells.
+  document against the CEO's writing voice profile and flag AI tells.
 context: fork
 allowed-tools: Read, Glob, Grep
 ---
@@ -19,7 +19,7 @@ and note that the review is not grounded in company-specific constraints.
 See other available advisors: [advisor-roster.md](../references/advisor-roster.md)
 Note: `/brand-review` covers brand alignment (terminology, product names,
 prohibited marketing words). That is a different lens from voice checking.
-If the target document is Desata-branded external content, recommend running
+If the target document is branded external content, recommend running
 both `/voice-check` and `/brand-review`.
 
 ## Step 1: Parse the request
@@ -29,31 +29,31 @@ Extract from $ARGUMENTS:
 - **Genre hint (optional):** A genre label (memo, op-ed, testimony, regulatory comment, article, email, pitch) to guide corpus matching
 
 The user may write this many ways:
-- `/voice-check desata-docs/legal/pll-memo.md`
-- `/voice-check memo desata-docs/legal/pll-memo.md`
-- `/voice-check pitch products/loanlimit/site/index.html`
+- `/voice-check docs/legal/compliance-memo.md`
+- `/voice-check memo docs/legal/compliance-memo.md`
+- `/voice-check pitch site/index.html`
 
 Parse naturally. If no file path is provided, ask: "What document should
 I voice-check?"
 
 ## Step 2: Load voice profile
 
-Read the voice profile at `desata-docs/brand/voice-profile.md`. This defines
-how Alex writes and how Alex does not write. Every rule in the profile is a
+Read the voice profile at your project's voice profile location. This defines
+how the CEO writes and how they do not write. Every rule in the profile is a
 potential deviation to check against.
 
 ## Step 3: Load corpus comparisons
 
-Read the corpus manifest at `desata-docs/brand/voice-corpus/corpus-manifest.md`.
+Read the corpus manifest at your project's voice corpus location (if available).
 Select 2-3 pieces that match the target document's genre. If the user provided
 a genre hint, use it. Otherwise infer genre from the document's content and
 format. Genre matching is approximate and that is fine.
 
 ## Step 4: Read corpus pieces
 
-Read the selected corpus pieces to calibrate your ear for Alex's voice.
+Read the selected corpus pieces to calibrate your ear for the CEO's voice.
 For PDF files, read pages 1-2. For .txt files, read in full. These are your
-ground truth for what Alex's writing actually sounds like.
+ground truth for what the CEO's writing actually sounds like.
 
 ## Step 5: Scan the document
 

@@ -31,8 +31,8 @@ Infer from $ARGUMENTS:
 
 The CEO may write this many ways:
 - `/brand-review the beta invite email`
-- `/brand-review review the landing page HTML in products/loanlimit/site/`
-- `/brand-review fix the outreach copy in desata-docs/docs/outreach/`
+- `/brand-review review the landing page HTML in site/`
+- `/brand-review fix the outreach copy in docs/outreach/`
 
 Parse naturally. If you cannot determine the target, ask:
 "What should I review for brand alignment?"
