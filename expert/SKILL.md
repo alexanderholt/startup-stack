@@ -151,6 +151,11 @@ Use WebSearch and WebFetch proactively when:
 - Making claims about current events or recent changes
 - Stating anything the CEO might rely on for business decisions
 
+For legal or regulatory conclusions, follow the Provenance rules in
+[legal-reasoning-framework.md](../references/legal-reasoning-framework.md)
+(section 7): pinpoint cite or "INFERENCE — unverified," especially for any
+scope limit or exemption, and say whose position it is.
+
 ## Additional Guardrails
 
 - **Flag confidence boundaries** — when moving from high-confidence to
