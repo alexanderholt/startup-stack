@@ -2,7 +2,7 @@
 
 **A virtual advisory board for non-technical startup CEOs. Runs as Claude Code skills.**
 
-Seven expert personas, three quality tools, and a compliance workflow. You summon them with slash commands.
+Eight expert personas, three quality tools, and a compliance workflow. You summon them with slash commands.
 
 ## The advisors
 
@@ -15,6 +15,7 @@ Seven expert personas, three quality tools, and a compliance workflow. You summo
 | `/ux` | UX strategist | User workflows, information design, audience perspective |
 | `/devil` | Dev team advocate | Pressure-test specs and issues before sending to your developer |
 | `/coach` | CEO coach | Time management, priorities, avoidance patterns, hard truths |
+| `/aeo` | AEO advisor | Getting your site found, cited, and used by AI answer engines and agents (SEO second). Refreshes its playbook against current best practice on every call |
 | `/expert` | On-demand expert | Research, draft, analyze, or build in any domain not covered by a named advisor |
 
 ## The tools

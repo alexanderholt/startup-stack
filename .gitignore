@@ -12,5 +12,8 @@ compliance-review/references/*.md
 # Your filled-in compliance checklist (start from checklist-template.md)
 compliance-review/checklist.md
 
+# AEO notes about your own site (playbook.md stays public, general practice only)
+aeo/site-notes.md
+
 # OS files
 .DS_Store

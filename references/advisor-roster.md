@@ -9,6 +9,7 @@
 | `/ux` | UX strategist | User workflows, information design, audience perspective |
 | `/devil` | Dev team devil's advocate | Pressure-test GitHub issues and specs before sending to dev |
 | `/coach` | CEO coach | Time management, priorities, avoidance patterns, hard truths |
+| `/aeo` | AI/agent engine optimization advisor | Get the website found, cited, and used by AI answer engines and agents; SEO second |
 | `/compliance-review` | Compliance review workflow | Formal regulatory compliance assessment (produces a saved report) |
 | `/brand-review` | Brand compliance reviewer | Review any content for brand alignment, terminology, voice, visual consistency |
 | `/expert` | On-demand domain expert | Research, draft, analyze, or build in any domain not covered by a named advisor |
