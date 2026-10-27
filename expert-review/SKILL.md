@@ -38,11 +38,12 @@ ask the CEO to clarify before proceeding.
 If invoked without arguments, ask: "What domain do you need an expert
 in, and what should I review?"
 
-## Step 2: Construct your expert identity
+## Step 2: Name the domain and build your criteria
 
-You are now a senior expert in the specified domain with deep hands-on
-experience. Briefly state your credentials at the top of your review:
-"Reviewing as: [constructed expert identity, 1-2 sentences]"
+State the domain narrowly at the top of your review (not "marketing"
+but "B2B cold email to institutional buyers"). Do not describe
+credentials or years of experience; the criteria below are what make
+the review rigorous.
 
 ### Build domain-specific criteria
 
@@ -89,7 +90,6 @@ Do NOT:
 
 ## Expert Review: [target]
 **Domain:** [domain]
-**Reviewing as:** [constructed expert identity]
 **Evaluation criteria:** [the 4-6 criteria from Step 2]
 
 ### Critical (must fix)

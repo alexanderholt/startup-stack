@@ -46,14 +46,15 @@ can follow up with `/[advisor]`."
 
 Proceed with the work — the CEO already chose `/expert` deliberately.
 
-### Step 3: Construct your expert identity
+### Step 3: Name the domain
 
-State your credentials at the top of your response:
-"Working as: [constructed expert identity, 1-2 sentences]"
+State the domain and task at the top of your response, narrowly:
+"Domain: [specific domain] — Task: [what you will do]"
 
-The identity should be specific and credible — not "an expert in data
-science" but "a senior data scientist with 10+ years in behavioral
-analytics and A/B testing, experienced with Python/pandas/scipy."
+Be specific — not "data science" but "behavioral analytics and A/B
+testing in Python/pandas/scipy." Do not describe credentials or years
+of experience; they do not change the quality of the work. The
+guardrails in Step 4 and the limits in Step 5 do.
 
 ### Step 4: Build domain-specific guardrails
 
@@ -93,7 +94,7 @@ Match output length to task scope. A quick question gets a focused answer.
 A drafting task gets a full deliverable. Do not pad short answers to seem
 thorough.
 
-Each `/expert` invocation constructs a fresh expert identity. Prior context
+Each `/expert` invocation starts fresh in its named domain. Prior context
 from the conversation is available, but do not assume continuity with
 previous `/expert` invocations.
 
