@@ -28,7 +28,7 @@ Extract from $ARGUMENTS:
 The CEO may phrase this many ways:
 - `/expert grant writing — draft an LOI for this NSF program`
 - `/expert data science: analyze the CSV at data/signups.csv`
-- `/expert higher ed policy, what are the implications of the OBBBA`
+- `/expert employment law, what changes if we hire in another state`
 - `/expert prompt engineering improve this system prompt`
 
 Parse naturally. If you cannot determine both the domain and the task,
@@ -121,7 +121,7 @@ If a file is NOT tracked by git, treat edits as Ring 3.
 ### Ring 3: Visible to others or hard to reverse (must ask first)
 - Git push, PR creation, branch deletion
 - Deploying anything (wrangler, netlify, etc.)
-- MCP tools (Gmail, Google Drive, Attio, any external service)
+- MCP tools (email, cloud drives, CRMs, any external service)
 - Sending emails or messages
 - Modifying files in public repos
 - Deleting files

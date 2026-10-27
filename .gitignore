@@ -9,5 +9,8 @@ brand-review/brand/*.md
 compliance-review/references/*.md
 !compliance-review/references/README.md
 
+# Your filled-in compliance checklist (start from checklist-template.md)
+compliance-review/checklist.md
+
 # OS files
 .DS_Store

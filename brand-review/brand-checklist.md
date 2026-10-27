@@ -12,7 +12,7 @@ were skipped.
 ## 1. Brand Identity & Consistency
 - Compare the target's tone and presentation against the voice description in `brand-tone.md` ("What We Sound Like" / "What We Don't Sound Like"). Does it match?
 - Compare against other company materials you can access. Is the treatment consistent?
-- Check the tone-by-context guidance in `brand-tone.md`. Is the tone appropriate for this specific medium (website, email, lender doc, investor materials)?
+- Check the tone-by-context guidance in `brand-tone.md`. Is the tone appropriate for this specific medium (website, email, partner doc, investor materials)?
 
 ## 2. Voice & Tone
 - Check the target against the voice-per-context section of `brand-tone.md`. Does the writing match the specified voice for this context?

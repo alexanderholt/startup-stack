@@ -101,7 +101,7 @@ Constraints like "pre-revenue" and "users are domain experts, not tech people" g
 
 ### Step 3: Customize the compliance checklist (optional)
 
-The default `compliance-review/checklist.md` is an example for loan recommendation products in higher education. Replace it with your own industry-specific items, or skip this step if you don't need compliance reviews.
+Copy `compliance-review/checklist-template.md` to `compliance-review/checklist.md` and replace the example items with your own industry-specific items. `checklist.md` is gitignored, so it stays local. Skip this step if you don't need compliance reviews.
 
 ### Step 4: Add regulatory references (optional)
 

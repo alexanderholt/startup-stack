@@ -34,7 +34,7 @@ List every regulation that applies to the subject under review. Cite the specifi
 
 ### 4. Review against checklist
 
-Work through [checklist.md](checklist.md) item by item. For each item:
+Work through [checklist.md](checklist.md) item by item. If checklist.md does not exist, tell the CEO to create it from [checklist-template.md](checklist-template.md) and stop. For each item:
 - Cite the specific regulatory source
 - Rate: ✅ Compliant, ⚠️ Risk, ❌ Non-compliant, or ❓ Insufficient info
 - Explain the rating in one sentence
