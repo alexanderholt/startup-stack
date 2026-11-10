@@ -1,0 +1,19 @@
+# Company-specific files (don't commit your filled-in context)
+references/company-context.md
+
+# Brand docs (your proprietary brand guide)
+brand-review/brand/*.md
+!brand-review/brand-checklist.md
+
+# Compliance review reference documents (your proprietary regulatory docs)
+compliance-review/references/*.md
+!compliance-review/references/README.md
+
+# Your filled-in compliance checklist (start from checklist-template.md)
+compliance-review/checklist.md
+
+# AEO notes about your own site (playbook.md stays public, general practice only)
+aeo/site-notes.md
+
+# OS files
+.DS_Store
